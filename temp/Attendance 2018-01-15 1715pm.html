@@ -1,0 +1,237 @@
+672696
+<div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <div class="class-detail-inner">
+        <table class="class-action-panels">
+            <tbody>
+            <tr>
+                <td class="">
+                    <div class="close-expanded">
+						<a href="javascript:void(0)" id="closeExpandedColumn">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+                    </div>
+                    <div class="class-coach-actions">
+                        <div id="coachCreateBookingPanelContent" style="display: block;">
+                            <ul class="tabs" data-tab>
+    <li class="tab-title active">
+        <a href="#memberTab">MEM</a>
+    </li>
+    <li class="tab-title">
+        <a href="#nonMemberTab">N-MEM</a>
+    </li>
+    <li class="tab-title">
+        <a href="#leadTab">LD</a>
+    </li>
+    <li class="tab-title">
+        <a href="#coachTab">Coaches</a>
+    </li>
+</ul>
+<div class="tabs-content">
+    <div id="memberTab" class="active content">
+        <p style="font-size: 12px;">Search existing members:</p>
+        <form id="coachSearchForAthletesForm" method="get" onsubmit="return false;" action="https://boxchamp.io/classlist/coach/book_members/672696">
+            <div class="search-field">
+                <div class="search-icon fa fa-search"></div>
+                <input type="search" name="search" id="coachSearchForAthletes" placeholder="Search athletes" autocomplete="off" data-url="https://boxchamp.io/classlist/coach/search/672696">
+            </div>
+			<div class="search-selection"><span id="coachSearchSelectionCount">0 members selected.</span> <a href="javascript:void(0)" id="coachSearchClearSelection" style="padding-left: 10px;">(clear)</a></div>
+            <div class="search-results-overflow">
+                <table class="search-results">
+                    <tbody id="coachSearchForAthletesResults">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="search-result-action" id="coachSearchForAthletesButtonWrapper" style="display: none;">
+                <input type="hidden" name="selection" id="coachSearchForAthletesSelection">
+                <input type="hidden" name="action" id="coachSearchForAthletesAction">
+                <button type="submit" class="button primary small" data-toggle="submitFormMultipleActionsButton" data-submitaction="book">BOOK</button>
+				<div id="waitingListActionWrapper" style="display: none;">
+					<div class="text-center" style="margin-top: 15px; margin-bottom: 15px;">OR</div>
+					<button type="submit" class="button primary small" data-toggle="submitFormMultipleActionsButton" data-submitaction="join">JOIN WAITING LIST</button>
+				</div>
+            </div>
+        </form>
+    </div>
+    <div id="nonMemberTab" class="content">
+        <p style="font-size: 12px;">Add non-members:</p>
+        <form id="coachBookNonMemberForm" method="post" onsubmit="return false;" action="https://boxchamp.io/classlist/coach/book_non_members/672696">
+            <div class="search-results-overflow">
+                <div class="form-fields" id="coachBookNonMemberList" data-index="1" data-prototype="&lt;div class=&quot;form-group&quot;&gt;
+                        &lt;input type=&quot;email&quot; name=&quot;nonMembers[__index__][email]&quot; placeholder=&quot;Email address *&quot; required&gt;
+                        &lt;input type=&quot;text&quot; name=&quot;nonMembers[__index__][name]&quot; placeholder=&quot;Full name&quot;&gt;
+                        &lt;div class=&quot;text-right&quot;&gt;&lt;a class=&quot;action-link&quot; href=&quot;javascript:void(0)&quot; data-toggle=&quot;removeNonMember&quot;&gt;&lt;span class=&quot;fa fa-times&quot;&gt;&lt;/span&gt; Remove&lt;/a&gt;&lt;/div&gt;
+                    &lt;/div&gt;">
+                    <div class="form-group">
+                        <input type="email" name="nonMembers[0][email]" placeholder="Email address *" required>
+                        <input type="text" name="nonMembers[0][name]" placeholder="Full name">
+                        <div class="text-right"><a class="action-link" href="javascript:void(0)" data-toggle="removeNonMember"><span class="fa fa-times"></span> Remove</a></div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="action-link" id="coachBookAddNonMember"><span class="fa fa-plus"></span> Add Non-member</a>
+            <div class="search-result-action" id="coachAddNonMemberButtonWrapper" style="display: block;">
+                <button type="submit" class="button primary small">BOOK</button>
+            </div>
+        </form>
+    </div>
+    <div id="leadTab" class="content">
+        <p style="font-size: 12px;">Search for existing leads:</p>
+        <form id="coachSearchForLeadsForm" method="get" onsubmit="return false;" action="https://boxchamp.io/classlist/coach/book_leads/672696">
+            <div class="search-field">
+                <div class="search-icon fa fa-search"></div>
+                <input type="search" name="search" id="coachSearchForLeads" placeholder="Search leads" autocomplete="off" data-url="https://boxchamp.io/classlist/coach/search_leads/672696">
+            </div>
+            <div class="search-selection"><span id="coachSearchLeadsSelectionCount">0 leads selected.</span> <a href="javascript:void(0)" id="coachSearchLeadsClearSelection" style="padding-left: 10px;">(clear)</a></div>
+            <div class="search-results-overflow">
+                <table class="search-results">
+                    <tbody id="coachSearchForLeadsResults">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="search-result-action" id="coachSearchForLeadsButtonWrapper" style="display: none;">
+                <input type="hidden" name="selection" id="coachSearchForLeadsSelection">
+                <input type="hidden" name="action" id="coachSearchForLeadsAction">
+                <button type="submit" class="button primary small" data-toggle="submitFormMultipleActionsButton" data-submitaction="book">BOOK</button>
+            </div>
+        </form>
+    </div>
+    <div id="coachTab" class="content">
+        <p style="font-size: 12px;">Search for existing coaches:</p>
+        <form id="coachSearchForCoachesForm" method="get" onsubmit="return false;" action="https://boxchamp.io/classlist/coach/book_coaches/672696">
+            <div class="search-field">
+                <div class="search-icon fa fa-search"></div>
+                <input type="search" name="search" id="coachSearchForCoaches" placeholder="Search coaches" autocomplete="off" data-url="https://boxchamp.io/classlist/coach/search_coaches/672696">
+            </div>
+            <div class="search-selection"><span id="coachSearchCoachesSelectionCount">0 coaches selected.</span> <a href="javascript:void(0)" id="coachSearchCoachesClearSelection" style="padding-left: 10px;">(clear)</a></div>
+            <div class="search-results-overflow">
+                <table class="search-results">
+                    <tbody id="coachSearchForCoachesResults">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="search-result-action" id="coachSearchForCoachesButtonWrapper" style="display: none;">
+                <input type="hidden" name="selection" id="coachSearchForCoachesSelection">
+                <input type="hidden" name="action" id="coachSearchForCoachesAction">
+                <button type="submit" class="button primary small" data-toggle="submitFormMultipleActionsButton" data-submitaction="book">BOOK</button>
+            </div>
+        </form>
+    </div>
+</div>
+                        </div>
+                        <div id="coachBookingDetailPanelContent" style="display: none;">
+                            Loading..
+                        </div>
+                    </div>
+                </td>
+                <td>
+                                        <div class="class-title">
+                        <div class="row">
+                            <div class="columns small-12 medium-6">
+                                <div class="title-primary">CrossFit</div>
+                                <div class="title-secondary">
+                                    <span class="green" style="font-size: 16px;font-weight: 400;">
+                                                                                                                                    Ballistix Coaches
+                                                                                                                        </span>
+
+                                                                    </div>
+                            </div>
+                            <div class="columns small-12 medium-6 text-right">
+                                <div class="title-primary">Mon, 15 Jan 2018</div>
+                                <div class="title-secondary">
+                                                                            17:15pm - 18:15pm
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="class-status">
+                        <div class="indicator">
+                            <div class="inner">
+                                                                    <div class="number">8</div>
+                                    <div class="text">attended</div>
+                                                            </div>
+                        </div>
+                    </div>
+
+                    <div class="class-reservations">
+                        <ul class="tabs" data-tab>
+                            <li class="tab-title active">
+                                <a href="#attendance">Attendance</a>
+                            </li>
+                                                                                </ul>
+
+                        <div class="tabs-content">
+                                                        <div class="content active" id="attendance" data-available="13">
+                                <ul class="row list editable">
+                                    <li class="columns large-1 medium-3 small-6 item add">
+                                        <div class="item-status">
+                                            <span class="fa fa-circle" style="visibility: hidden;"></span>
+                                        </div>
+                                        <div class="profile-image">
+                                            <a href="javascript:void(0)" data-toggle="coachBookAthletes">
+                                                <span class="fa fa-plus"></span>
+                                            </a>
+                                        </div>
+                                        <div class="athlete-name" style="visibility: hidden;">
+                                            Available
+                                        </div>
+                                    </li>
+                                                                            <li data-context="attendee_1639829" class="columns large-1 medium-3 small-6 item taken" data-toggle="coachDetailClassBooking" data-url="https://boxchamp.io/classlist/coach/booking_detail/1639829">
+                                            <div class="item-status">
+                                                                                                    <span class="fa fa-circle-o"></span>
+                                                                                            </div>
+                                            <div class="profile-image" >
+        <img data-tooltipster data-url="https://boxchamp.io/members/athletes/avatar_widget/1358" alt="Belinda van Eeden" src="https://s3.eu-central-1.amazonaws.com/boxchamp-profilepics/TkZyWZUcCpSbqzT.jpg">
+</div>
+                                            <div class="athlete-name">
+                                                Belinda van Eeden <a href="javascript:void(0);" data-modal-color="dark" data-toggle="get-content" data-default-content="&lt;div class=&quot;text-center&quot;&gt;&lt;span class=&quot;fa fa-2x fa-spin fa-spinner&quot;&gt;&lt;/span&gt;&lt;/div&gt;" data-url="https://boxchamp.io/members/manage-athletes/athlete_details/1358?facility=2"><span class="fa fa-eye"></span></a>                                            </div>
+                                        </li>
+                                                                            <li data-context="attendee_1639834" class="columns large-1 medium-3 small-6 item taken" data-toggle="coachDetailClassBooking" data-url="https://boxchamp.io/classlist/coach/booking_detail/1639834">
+                                            <div class="item-status">
+                                                                                                    <span class="fa fa-circle-o"></span>
+                                                                                            </div>
+                                            <div class="profile-image" >
+        <img data-tooltipster data-url="https://boxchamp.io/members/athletes/avatar_widget/10629" alt="Debbie Pienaar" src="https://s3.eu-central-1.amazonaws.com/boxchamp-profilepics/sign-up-profile-image.png">
+</div>
+                                            <div class="athlete-name">
+                                                Debbie Pienaar <a href="javascript:void(0);" data-modal-color="dark" data-toggle="get-content" data-default-content="&lt;div class=&quot;text-center&quot;&gt;&lt;span class=&quot;fa fa-2x fa-spin fa-spinner&quot;&gt;&lt;/span&gt;&lt;/div&gt;" data-url="https://boxchamp.io/members/manage-athletes/athlete_details/10629?facility=2"><span class="fa fa-eye"></span></a>                                            </div>
+                                        </li>
+                                                                            <li data-context="attendee_1639830" class="columns large-1 medium-3 small-6 item taken" data-toggle="coachDetailClassBooking" data-url="https://boxchamp.io/classlist/coach/booking_detail/1639830">
+                                            <div class="item-status">
+                                                                                                    <span class="fa fa-circle-o"></span>
+                                                                                            </div>
+                                            <div class="profile-image" >
+        <img data-tooltipster data-url="https://boxchamp.io/members/athletes/avatar_widget/34" alt="Cecil Mulligan" src="https://s3.eu-central-1.amazonaws.com/boxchamp-profilepics/100282092859f591c7060bc1.77856928.jpg">
+</div>
+                                            <div class="athlete-name">
+                                                Cecil Mulligan <a href="javascript:void(0);" data-modal-color="dark" data-toggle="get-content" data-default-content="&lt;div class=&quot;text-center&quot;&gt;&lt;span class=&quot;fa fa-2x fa-spin fa-spinner&quot;&gt;&lt;/span&gt;&lt;/div&gt;" data-url="https://boxchamp.io/members/manage-athletes/athlete_details/34?facility=2"><span class="fa fa-eye"></span></a>                                            </div>
+                                        </li>
+                                                                            <li data-context="attendee_1639835" class="columns large-1 medium-3 small-6 item taken" data-toggle="coachDetailClassBooking" data-url="https://boxchamp.io/classlist/coach/booking_detail/1639835">
+                                            <div class="item-status">
+                                                                                                    <span class="fa fa-circle-o"></span>
+                                                                                            </div>
+                                            <div class="profile-image" >
+        <img data-tooltipster data-url="https://boxchamp.io/members/athletes/avatar_widget/24" alt="Hesphia Short" src="https://s3.eu-central-1.amazonaws.com/boxchamp-profilepics/sign-up-profile-image.png">
+</div>
+                                            <div class="athlete-name">
+                                                Hesphia Short <a href="javascript:void(0);" data-modal-color="dark" data-toggle="get-content" data-default-content="&lt;div class=&quot;text-center&quot;&gt;&lt;span class=&quot;fa fa-2x fa-spin fa-spinner&quot;&gt;&lt;/span&gt;&lt;/div&gt;" data-url="https://boxchamp.io/members/manage-athletes/athlete_details/24?facility=2"><span class="fa fa-eye"></span></a>                                            </div>
+                                        </li>
+                                                                            <li data-context="attendee_1639831" class="columns large-1 medium-3 small-6 item taken" data-toggle="coachDetailClassBooking" data-url="https://boxchamp.io/classlist/coach/booking_detail/1639831">
+                                            <div class="item-status">
+                                                                                                    <span class="fa fa-circle-o"></span>
+                                                                                            </div>
+                                            <div class="profile-image" >
+        <img data-tooltipster data-url="https://boxchamp.io/members/athletes/avatar_widget/10617" alt="Charlene Collins" src="https://s3.eu-central-1.amazonaws.com/boxchamp-profilepics/sign-up-profile-image.png">
+</div>
+                                            <div class="athlete-name">
+                                                Charlene Collins <a href="javascript:void(0);" data-modal-color="dark" data-toggle="get-content" data-default-content="&lt;div class=&quot;text-center&quot;&gt;&lt;span class=&quot;fa fa-2x fa-spin fa-spinner&quot;&gt;&lt;/span&gt;&lt;/div&gt;" data-url="https://boxchamp.io/members/manage-athletes/athlete_details/10617?facility=2"><span class="fa fa-eye"></span></a>                                            </div>
+                                        </li>
+                                                                            <li data-context="attendee_1639836" class="columns large-1 medium-3 small-6 item taken" data-toggle="coachDetailClassBooking" data-url="https://boxchamp.io/classlist/coach/booking_detail/1639836">
+                                            <div class="item-status">
+                                                                                                    <span class="fa fa-circle-o"></span>
+                                                                                            </div>
+                                            

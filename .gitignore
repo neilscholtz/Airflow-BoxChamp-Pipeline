@@ -1,0 +1,16 @@
+db.cfg
+airflow-scheduler.err
+airflow-scheduler.log
+airflow-scheduler.out
+airflow-scheduler.pid
+airflow-webserver-monitor.pid
+airflow-webserver.err
+airflow-webserver.log
+airflow-webserver.out
+airflow-webserver.pid
+airflow.cfg
+airflow.db
+setup.cfg
+unittests.cfg
+__pycache__/
+.ipynb_checkpoints/
