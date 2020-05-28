@@ -80,5 +80,5 @@ There are 2 dags, _attendance_ and _attendance2_.
 - _attendance_ runs without updating members & leads (good if you want to backfill the attendance)
 - _attendance2_ runs first by updating members & leads (best to keep the member & lead data fresh and updated)
 
-### Additional information
+### D. Additional information
 The folder _temp/_ contains example files that are downloaded as html and then parsed to json files. 
