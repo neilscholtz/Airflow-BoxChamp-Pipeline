@@ -69,8 +69,10 @@ Copy the files inside the Airflow/ folder in this repository into your Airflow f
 
 ### C. Run Airflow and DAGs
 #### Start Airflow
-$ `airflow scheduler -D` 
-$ `airflow webserver -D`
+```
+airflow scheduler -D 
+airflow webserver -D
+```
 
 If you are hosting this locally, you can access the Airflow Webserver UI at localhost:8080.
 
