@@ -30,47 +30,47 @@ The Airflow DAG that was set up would run daily as follows:
 #### Follow the below setup on an AWS AMI/Centos/Redhat AWS EC2 instance or operating system
 
 ##### Run updates
-`sudo yum update`
+$ `sudo yum update`
 
 #### Download & install Anaconda
-`curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh` 
-`bash Anaconda3-2020.02-Linux-x86_64.sh` 
-`rm Anaconda3-2020.02-Linux-x86_64.sh` 
+$ `curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh` 
+$ `bash Anaconda3-2020.02-Linux-x86_64.sh` 
+$ `rm Anaconda3-2020.02-Linux-x86_64.sh` 
 
 #### Activate anaconda environment
-`source ~/.bashrc` 
+$ `source ~/.bashrc` 
 
 #### Install dependencies for Google Chrome (required for webscraping)
-`curl https://intoli.com/install-google-chrome.sh | bash`
+$ `curl https://intoli.com/install-google-chrome.sh | bash`
 
 #### Install Chromedriver (required for webscraping)
-`wget -N https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip -P ~/` 
-`unzip ~/chromedriver_linux64.zip -d ~/` 
-`rm ~/chromedriver_linux64.zip` 
-`sudo mv -f ~/chromedriver /usr/local/bin/chromedriver` 
-`sudo chown root:root /usr/local/bin/chromedriver` 
-`sudo chmod 0755 /usr/local/bin/chromedriver` 
+$ `wget -N https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip -P ~/` 
+$ `unzip ~/chromedriver_linux64.zip -d ~/` 
+$ `rm ~/chromedriver_linux64.zip` 
+$ `sudo mv -f ~/chromedriver /usr/local/bin/chromedriver` 
+$ `sudo chown root:root /usr/local/bin/chromedriver` 
+$ `sudo chmod 0755 /usr/local/bin/chromedriver` 
 
 #### Install Selenium (required for webscraping)
-`pip install selenium` 
+$ `pip install selenium` 
 
 #### Install development tools (needed for airflow)
-`sudo yum -y install gcc gcc-c++` 
+$ `sudo yum -y install gcc gcc-c++` 
 
 #### Set home for Apache-Airflow
-`export AIRFLOW_HOME=~/airflow` 
+$ `export AIRFLOW_HOME=~/airflow` 
 
 #### Install Apache-Airflow (https://airflow.apache.org/docs/stable/start.html)
-`pip install apache-airflow` 
-`airflow initdb`
+$ `pip install apache-airflow` 
+$ `airflow initdb`
 
 #### Airflow files/folders
 Copy the files inside the Airflow/ folder in this repository into your Airflow folder on your machine
 
 ### C. Run Airflow and DAGs
 #### Start Airflow
-`airflow scheduler -D` 
-`airflow webserver -D`
+$ `airflow scheduler -D` 
+$ `airflow webserver -D`
 
 If you are hosting this locally, you can access the Airflow Webserver UI at localhost:8080.
 
