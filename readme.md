@@ -64,6 +64,9 @@ export AIRFLOW_HOME=~/airflow
 pip install apache-airflow
 airflow initdb
 
+#### Airflow files/folders
+Copy the files inside the Airflow/ folder in this repository into your Airflow folder on your machine
+
 ### Run Airflow and DAGs
 #### Start Airflow
 airflow scheduler -D
